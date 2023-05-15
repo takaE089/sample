@@ -4,61 +4,93 @@ public class Qes1_13 {
 
 	public static void main(String[] args) {
 		/******************************************
-		 * [概要]Qes1_ローカル変数宣言　Qes2_変数初期化
+		 * [概要]Qes1_ローカル変数宣言
 		 ******************************************/
 		
 		// バイト型の変数宣言
-		byte b = 0;
+		byte by;
 		
 		// 短整数型の変数宣言
-		short s = 0;
+		short st;
 		
 		// 整数型の変数宣言
-		int i = 0;
+		int in;
 		
 		// 長整数型の変数宣言
-		long l = 0;
+		long lg;
 		
 		// 単精度浮動小数点型の変数宣言
-		float f = 0.0f;
+		float flt;
 		
 		// 倍精度浮動小数点型の変数宣言
-		double d = 0.0;
+		double dbl;
 		
 		// 文字型の変数宣言
-		char c = '\u0000';
+		char ch;
 		
 		// 文字列型の変数宣言
-		String str = null;
+		String str;
 		
 		// ブーリアン型の変数宣言
-		boolean is = false;
+		boolean is;
 		
+		
+		/******************************************
+		 * [概要]Qes2_変数初期化
+		 ******************************************/
+		
+		// バイト型の初期値代入
+		by = 0;
+		
+		// 短整数型の初期値代入
+		st = 0;
+		
+		// 整数型の初期値代入
+		in = 0;
+		
+		// 長整数型の初期値代入
+		lg = 0L;
+		
+		// 単精度浮動小数点型の初期値代入
+		flt = 0.0f;
+		
+		// 倍精度浮動小数点型の初期値代入
+		dbl = 0.0d;
+		
+		// 文字型の初期値代入
+		ch = '\u0000';
+		
+		// 文字列型の初期値代入
+		str = null;
+		
+		// ブーリアン型の初期値代入
+		is = false;
+
 		
 		/***********************
 		 * [概要]Qes3_変数へ値代入
 		 ***********************/
 		
 		// バイト型に10を代入
-		b = 10;
+		by = 10;
 		
 		// 短整数型に100を代入
-		s = 100;
+		st = 100;
 		
 		// 整数型に1000を代入
-		i = 1000;
+		in = 1000;
 		
 		// 長整数型に10000を代入
-		l = 10000;
+		lg = 10000;
 		
 		// 単精度浮動小数点数型に9.5を代入
-		f = 9.5f;
+		flt = 9.5f;
 		
 		// 倍精度浮動小数点数型に10.5を代入
-		d = 10.5;
+		dbl = 10.5;
 		
 		// 文字型にaを代入
-		c = 'a';
+		ch = 'a';
 		
 		// 文字列型にハローを代入
 		str = "ハロー";
@@ -72,34 +104,36 @@ public class Qes1_13 {
 		 *************************/
 		
 		// 11110をコンソールに出力
-		System.out.println(b + s + i + l);
+		System.out.println(by + st + in + lg);
 		
 		// 20をコンソールに出力
-		System.out.println(Math.round(f + d));
+		System.out.println(Math.round(flt + dbl));
 		
 		// aハローtrueをコンソールに出力
-		System.out.println(c + str + is);
+		System.out.println(ch + str + is);
 		
 		// 11130をコンソールに出力
-		System.out.println(Math.round(b + s + i + l + f + d));
+		System.out.println(Math.round(by + st + in + lg + flt + dbl));
 		
 		// 10000000000をコンソールに出力
-		System.out.println(b * s * i * l);
+		System.out.println(by * st * in * lg);
 		
 		// 0.105をコンソールに出力
-		System.out.println(d / s);
+		System.out.println(dbl / st);
 		
 		// -90をコンソールに出力
-		System.out.println(b - s);
+		System.out.println(by - st);
 		
 		
 		/*************************
 		 * [概要]Qes5_プログラム修正
 		 *************************/
 		
-		// ハローJAVA43をコンソールに出力
+		// numの値が文字列になっている為、String型からint型に修正
 		int num = 20;
 		int num1 = 23;
+
+		// ハローJAVA43をコンソールに出力
 		System.out.println("ハローJAVA" + (num + num1));
 		
 		
@@ -266,7 +300,7 @@ public class Qes1_13 {
 		// [年齢が25もしくは身長が160以上]であればtrueを出力
 		result = age == 25 || iHeight >= 160 ? "true" : "false";
 		System.out.println(result);
-
+				
 	}
 
 }
