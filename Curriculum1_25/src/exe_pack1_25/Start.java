@@ -36,8 +36,8 @@ public class Start {
 		// コンソール入力値を取得し変数に代入
 		String name = scan.nextLine();
 		
-		// コンソール入力値がnullの場合
-		if(Objects.isNull(name)) {
+		// コンソール入力値がnullもしくは文字入力されていない場合
+		if(Objects.isNull(name) || name.length() <= 0) {
 			// コンソールにメッセージ表示
 			System.out.println("名前を入力してください");
 			
@@ -48,6 +48,9 @@ public class Start {
 			// メソッド呼び出し
 			ms.display();
 		}
+		
+		// スキャナを閉じる
+		scan.close();
 	}
 
 }
