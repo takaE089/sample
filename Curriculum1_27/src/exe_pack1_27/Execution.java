@@ -59,8 +59,8 @@ public class Execution {
 		// コンソール入力値を[,]で区切り配列へ代入
 		String[] data = str.split(",");
 		
-		// Nullの場合
-		if(Objects.isNull(str)) {
+		// Nullもしくは文字が入力されていない場合
+		if(Objects.isNull(str) || str.length() <= 0) {
 			// メッセージを出力
 			System.out.println("文字が入力されていません");
 			
@@ -75,6 +75,9 @@ public class Execution {
 				
 			}
 		}
+		
+		// スキャナを閉じる
+		scan.close();
 	}
 
 }
