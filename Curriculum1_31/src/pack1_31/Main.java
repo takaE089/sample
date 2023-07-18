@@ -25,16 +25,16 @@ public class Main {
 		Bicycle bicycle = new Bicycle();
 		
 		// person1の名前をセット
-		// car.setOwner(person1.getName());
+		car.setOwner(person1.getName());
 		
 		// person2の名前をセット
-		// bicycle.setOwner(person2.getName());
+		bicycle.setOwner(person2.getName());
 		
 		// コンソールへ出力
-		// System.out.println(car.getOwner());
+		System.out.println(car.getOwner());
 		
 		// コンソールへ出力
-		// System.out.println(bicycle.getOwner());
+		System.out.println(bicycle.getOwner());
 		
 		// メソッド呼び出し
 		person1.buy(car);
